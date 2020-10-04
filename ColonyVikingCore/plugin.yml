@@ -1,0 +1,10 @@
+name: ColonyVikingCore
+version: 1.0
+author: ACrispyCookie
+main: net.colonymc.vikingcore.Main
+depend: [WorldGuard, Citizens, PlaceholderAPI]
+commands:
+  vikingbook:
+    description: Command to give any viking item to a player.
+  vikingitem:
+    description: Command to give any viking item to a player.
