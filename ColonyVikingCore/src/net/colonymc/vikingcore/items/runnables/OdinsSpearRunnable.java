@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Effect;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -26,7 +27,6 @@ import net.colonymc.api.player.PlayerInventory;
 import net.colonymc.vikingcore.Main;
 import net.colonymc.vikingcore.items.gungnir.Gungnir;
 import net.colonymc.vikingcore.items.gungnir.GungnirHitEvent;
-import net.minecraft.server.v1_8_R3.EnumParticle;
 import net.minecraft.server.v1_8_R3.IChatBaseComponent;
 import net.minecraft.server.v1_8_R3.PacketPlayOutChat;
 
@@ -109,7 +109,7 @@ public class OdinsSpearRunnable extends BukkitRunnable {
 	
 	public void setVelocity() {
 		Location loc = as.getLocation();
-		particle = new Particle(EnumParticle.FLAME, 0, new Location(loc.getWorld(), loc.getX() + 0.2f, loc.getY() + 0.6f, loc.getZ() + 0.2f));
+		particle = new Particle(Effect.MOBSPAWNER_FLAMES, 0, new Location(loc.getWorld(), loc.getX() + 0.2f, loc.getY() + 0.6f, loc.getZ() + 0.2f));
 		particle.play(Bukkit.getOnlinePlayers(), 1);
 		Vector to = closestEntity.getLocation().add(new Location(closestEntity.getWorld(), 0, 0.5f, 0)).subtract(as.getLocation()).toVector().normalize();
 		as.setVelocity(to.multiply(spear.getSpeed()/100));

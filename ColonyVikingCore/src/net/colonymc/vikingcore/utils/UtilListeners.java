@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Effect;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -18,7 +19,6 @@ import org.bukkit.util.Vector;
 import net.colonymc.api.player.Particle;
 import net.colonymc.vikingcore.items.ItemChecker;
 import net.colonymc.vikingcore.items.SpecialItem;
-import net.minecraft.server.v1_8_R3.EnumParticle;
 
 public class UtilListeners implements Listener {
 	
@@ -58,7 +58,7 @@ public class UtilListeners implements Listener {
 				else {
 					Collection<? extends Player> pl = Bukkit.getOnlinePlayers();
 					Location finalLocation = getRightSide(p.getEyeLocation(), 0.45).subtract(0, .6, 0);
-					Particle particle = new Particle(EnumParticle.CRIT_MAGIC, 0, finalLocation);
+					Particle particle = new Particle(Effect.MAGIC_CRIT, 0, finalLocation);
 					particle.play(pl);
 					animations.put(p, particle);
 				}
