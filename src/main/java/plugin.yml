@@ -1,0 +1,10 @@
+name: ColonyVikingCore
+version: 1.0
+author: ACrispyCookie
+main: net.colonymc.colonyvikingcore.Main
+depend: [FastAsyncWorldEdit, WorldEdit, WorldGuard, Citizens, ColonySpigotAPI]
+commands:
+  vikingbook:
+    description: Command to give any viking item to a player.
+  vikingitem:
+    description: Command to give any viking item to a player.
