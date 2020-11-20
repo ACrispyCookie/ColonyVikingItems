@@ -6,9 +6,9 @@ import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
-import net.colonymc.colonyspigotapi.itemstacks.ItemStackBuilder;
-import net.colonymc.colonyspigotapi.itemstacks.NBTItems;
-import net.colonymc.colonyspigotapi.primitive.RomanNumber;
+import net.colonymc.colonyspigotapi.api.itemstack.ItemStackBuilder;
+import net.colonymc.colonyspigotapi.api.itemstack.ItemStackNBT;
+import net.colonymc.colonyspigotapi.api.primitive.RomanNumber;
 import net.minecraft.server.v1_8_R3.NBTTagInt;
 import net.minecraft.server.v1_8_R3.NBTTagString;
 
@@ -27,8 +27,8 @@ public class EnchantmentBook {
 	}
 	
 	public EnchantmentBook(ItemStack item, Player p) {
-		this.enchant = ItemEnchant.valueOf(NBTItems.getString(item, "vikingBook"));
-		this.level = ((NBTTagInt) NBTItems.getTag(item, "vikingLevel")).d();
+		this.enchant = ItemEnchant.valueOf(ItemStackNBT.getString(item, "vikingBook"));
+		this.level = ((NBTTagInt) ItemStackNBT.getTag(item, "vikingLevel")).d();
 		this.player = p;
 		this.item = item;
 	}

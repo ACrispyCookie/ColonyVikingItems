@@ -16,7 +16,7 @@ import org.bukkit.event.player.PlayerItemDamageEvent;
 import com.sk89q.worldguard.protection.flags.StateFlag;
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
 
-import net.colonymc.colonyspigotapi.player.PlayerInventory;
+import net.colonymc.colonyspigotapi.api.player.PlayerInventory;
 import net.colonymc.colonyvikingcore.items.ItemChecker;
 import net.colonymc.colonyvikingcore.items.ItemEnchant;
 import net.colonymc.colonyvikingcore.items.ItemType;

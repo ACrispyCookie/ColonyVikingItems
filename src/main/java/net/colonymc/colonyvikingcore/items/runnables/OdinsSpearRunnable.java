@@ -22,8 +22,8 @@ import org.bukkit.util.Vector;
 
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
 
-import net.colonymc.colonyspigotapi.player.Particle;
-import net.colonymc.colonyspigotapi.player.PlayerInventory;
+import net.colonymc.colonyspigotapi.api.particles.Particle;
+import net.colonymc.colonyspigotapi.api.player.PlayerInventory;
 import net.colonymc.colonyvikingcore.Main;
 import net.colonymc.colonyvikingcore.items.gungnir.Gungnir;
 import net.colonymc.colonyvikingcore.items.gungnir.GungnirHitEvent;

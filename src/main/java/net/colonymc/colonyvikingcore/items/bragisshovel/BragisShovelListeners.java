@@ -4,7 +4,7 @@ import com.sk89q.worldguard.bukkit.WGBukkit;
 import com.sk89q.worldguard.protection.flags.DefaultFlag;
 import com.sk89q.worldguard.protection.flags.StateFlag;
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
-import net.colonymc.colonyspigotapi.player.PlayerInventory;
+import net.colonymc.colonyspigotapi.api.player.PlayerInventory;
 import net.colonymc.colonyvikingcore.items.ItemChecker;
 import net.colonymc.colonyvikingcore.items.ItemEnchant;
 import net.colonymc.colonyvikingcore.items.ItemType;

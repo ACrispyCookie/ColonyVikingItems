@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
-import net.colonymc.colonyspigotapi.itemstacks.NBTItems;
+import net.colonymc.colonyspigotapi.api.itemstack.ItemStackNBT;
 import net.colonymc.colonyvikingcore.items.ItemEnchant;
 import net.colonymc.colonyvikingcore.items.ItemType;
 import net.colonymc.colonyvikingcore.items.SpecialItem;
@@ -19,7 +19,7 @@ public class JorosHoe extends SpecialItem {
 	
 	public JorosHoe(ItemStack i, Player p) {
 		super(i, p);
-		mode = (int) NBTItems.getDouble((NBTTagList) NBTItems.getTag(i, "vikingAttributes"), attributeIndex);
+		mode = (int) ItemStackNBT.getDouble((NBTTagList) ItemStackNBT.getTag(i, "vikingAttributes"), attributeIndex);
 	}
 	
 	public JorosHoe(ItemType type, int durability, int maxDurability, int level, Player p) {

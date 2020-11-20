@@ -13,9 +13,9 @@ import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 
-import net.colonymc.colonyspigotapi.itemstacks.ItemStackBuilder;
-import net.colonymc.colonyspigotapi.itemstacks.NBTItems;
-import net.colonymc.colonyspigotapi.primitive.RomanNumber;
+import net.colonymc.colonyspigotapi.api.itemstack.ItemStackBuilder;
+import net.colonymc.colonyspigotapi.api.itemstack.ItemStackNBT;
+import net.colonymc.colonyspigotapi.api.primitive.RomanNumber;
 import net.minecraft.server.v1_8_R3.NBTBase;
 import net.minecraft.server.v1_8_R3.NBTTagDouble;
 import net.minecraft.server.v1_8_R3.NBTTagInt;
@@ -67,17 +67,17 @@ public abstract class SpecialItem implements Listener {
 	public SpecialItem(ItemStack i, Player p) {
 		this.p = p;
 		this.item = i;
-		this.type = ItemType.fromEncodedName(((NBTTagString) NBTItems.getTag(i, "vikingItem")).a_());
+		this.type = ItemType.fromEncodedName(((NBTTagString) ItemStackNBT.getTag(i, "vikingItem")).a_());
 		this.info = type.info;
-		NBTTagList attributes = (NBTTagList) NBTItems.getTag(i, "vikingAttributes");
-		this.durability = (int) NBTItems.getDouble(attributes, 0);
-		this.maxDurability = (int) NBTItems.getDouble(attributes, 1);
-		this.level = (int) NBTItems.getDouble(attributes, 2);
-		this.damage = NBTItems.getDouble(attributes, 3);
-		NBTTagList enchants = (NBTTagList) NBTItems.getTag(i, "vikingEnchants");
-		NBTTagList enchantLevels = (NBTTagList) NBTItems.getTag(i, "vikingEnchantLevels");
+		NBTTagList attributes = (NBTTagList) ItemStackNBT.getTag(i, "vikingAttributes");
+		this.durability = (int) ItemStackNBT.getDouble(attributes, 0);
+		this.maxDurability = (int) ItemStackNBT.getDouble(attributes, 1);
+		this.level = (int) ItemStackNBT.getDouble(attributes, 2);
+		this.damage = ItemStackNBT.getDouble(attributes, 3);
+		NBTTagList enchants = (NBTTagList) ItemStackNBT.getTag(i, "vikingEnchants");
+		NBTTagList enchantLevels = (NBTTagList) ItemStackNBT.getTag(i, "vikingEnchantLevels");
 		for(int c = 0; c < enchants.size(); c++) {
-			enchantments.add(new Enchantment(ItemEnchant.valueOf(NBTItems.getString(enchants, c)), NBTItems.getInt(enchantLevels, c)));
+			enchantments.add(new Enchantment(ItemEnchant.valueOf(ItemStackNBT.getString(enchants, c)), ItemStackNBT.getInt(enchantLevels, c)));
 		}
 		if(info.isUpgradeable()) {
 			this.name = item.getItemMeta().getDisplayName().substring(0, item.getItemMeta().getDisplayName().indexOf('(') - 3);
@@ -168,7 +168,7 @@ public abstract class SpecialItem implements Listener {
 	
 	public static SpecialItem getByType(ItemStack i, Player p) {
 		try {
-			ItemType type = ItemType.fromEncodedName(NBTItems.getString(i, "vikingItem"));
+			ItemType type = ItemType.fromEncodedName(ItemStackNBT.getString(i, "vikingItem"));
 			Class<?> cl = Class.forName("net.colonymc.colonyvikingcore.items." + type.encodedName + "." + type.className);
 			Constructor<?> con = cl.getDeclaredConstructor(new Class[] {ItemStack.class, Player.class});
 			return (SpecialItem) con.newInstance(i, p);

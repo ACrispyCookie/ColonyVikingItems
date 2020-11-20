@@ -17,9 +17,9 @@ import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import net.colonymc.colonyspigotapi.itemstacks.SkullItemBuilder;
-import net.colonymc.colonyspigotapi.player.ExperienceManager;
-import net.colonymc.colonyspigotapi.player.PlayerInventory;
+import net.colonymc.colonyspigotapi.api.itemstack.SkullItemBuilder;
+import net.colonymc.colonyspigotapi.api.player.ExperienceManager;
+import net.colonymc.colonyspigotapi.api.player.PlayerInventory;
 import net.colonymc.colonyvikingcore.items.SpecialItem;
 
 public class RepairInventory implements InventoryHolder {

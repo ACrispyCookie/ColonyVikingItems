@@ -6,7 +6,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
-import net.colonymc.colonyspigotapi.itemstacks.NBTItems;
+import net.colonymc.colonyspigotapi.api.itemstack.ItemStackNBT;
 import net.colonymc.colonyvikingcore.items.ItemType;
 import net.colonymc.colonyvikingcore.items.SpecialItem;
 import net.minecraft.server.v1_8_R3.NBTBase;
@@ -20,8 +20,8 @@ public class Gungnir extends SpecialItem {
 	
 	public Gungnir(ItemStack i, Player p) {
 		super(i, p);
-		speed = NBTItems.getDouble((NBTTagList) NBTItems.getTag(i, "vikingAttributes"), attributeIndex);
-		returnTime = NBTItems.getDouble((NBTTagList) NBTItems.getTag(i, "vikingAttributes"), attributeIndex + 1);
+		speed = ItemStackNBT.getDouble((NBTTagList) ItemStackNBT.getTag(i, "vikingAttributes"), attributeIndex);
+		returnTime = ItemStackNBT.getDouble((NBTTagList) ItemStackNBT.getTag(i, "vikingAttributes"), attributeIndex + 1);
 	}
 	
 	public Gungnir(ItemType type, int durability, int maxDurability, int level, Player p) {
