@@ -1,7 +1,7 @@
-name: ColonyVikingCore
+name: ColonyVikingItems
 version: 1.0
 author: ACrispyCookie
-main: net.colonymc.colonyvikingcore.Main
+main: net.colonymc.colonyvikingitems.Main
 depend: [FastAsyncWorldEdit, WorldEdit, WorldGuard, Citizens, ColonySpigotAPI]
 commands:
   vikingbook:
