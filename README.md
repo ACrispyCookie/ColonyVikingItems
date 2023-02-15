@@ -1,3 +1,5 @@
+# ColonyVikingItems
+
 ColonyVikingItems is a Spigot plugin that implements custom viking weapons/tools in-game. It includes custom durability, levelling and enchantments. Some of the custom items are:
 
   - Mjolnir - Thor's hammer
