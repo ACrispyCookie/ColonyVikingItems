@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
-import net.colonymc.colonyspigotapi.api.itemstack.ItemStackNBT;
+import net.colonymc.colonyspigotlib.lib.itemstack.ItemStackNBT;
 import net.colonymc.colonyvikingitems.items.ItemEnchant;
 import net.colonymc.colonyvikingitems.items.ItemType;
 import net.colonymc.colonyvikingitems.items.SpecialItem;

@@ -2,7 +2,7 @@ name: ColonyVikingItems
 version: 1.0
 author: ACrispyCookie
 main: net.colonymc.colonyvikingitems.Main
-depend: [FastAsyncWorldEdit, WorldEdit, WorldGuard, Citizens, ColonySpigotAPI]
+depend: [FastAsyncWorldEdit, WorldEdit, WorldGuard, Citizens, ColonySpigotLib]
 commands:
   vikingbook:
     description: Command to give any viking item to a player.

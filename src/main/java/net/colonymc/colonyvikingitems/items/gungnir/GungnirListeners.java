@@ -21,7 +21,7 @@ import org.bukkit.inventory.ItemStack;
 
 import com.sk89q.worldguard.protection.regions.ProtectedRegion;
 
-import net.colonymc.colonyspigotapi.api.player.PlayerInventory;
+import net.colonymc.colonyspigotlib.lib.player.PlayerInventory;
 import net.colonymc.colonyvikingitems.items.ItemChecker;
 import net.colonymc.colonyvikingitems.items.ItemType;
 import net.colonymc.colonyvikingitems.items.SpecialItem;

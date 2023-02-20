@@ -16,9 +16,9 @@ import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import net.colonymc.colonyspigotapi.api.itemstack.SkullItemBuilder;
-import net.colonymc.colonyspigotapi.api.player.PlayerInventory;
-import net.colonymc.colonyspigotapi.api.primitive.RomanNumber;
+import net.colonymc.colonyspigotlib.lib.itemstack.SkullItemBuilder;
+import net.colonymc.colonyspigotlib.lib.player.PlayerInventory;
+import net.colonymc.colonyspigotlib.lib.primitive.RomanNumber;
 import net.colonymc.colonyskyblockcore.guilds.Guild;
 import net.colonymc.colonyvikingitems.items.ItemRarity;
 import net.colonymc.colonyvikingitems.items.ItemType;

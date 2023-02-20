@@ -43,16 +43,15 @@
         </dependency>
         <dependency>
             <groupId>net.colonymc</groupId>
-            <artifactId>colonyspigotapi</artifactId>
+            <artifactId>ColonySpigotLib</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>net.colonymc</groupId>
-            <artifactId>colonyskyblockcore</artifactId>
+            <artifactId>ColonySkyblockCore</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>C:/Users/nikas/Desktop/colony-test/skyblock/plugins/colonyskyblockcore.jar</systemPath>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>net.citizensnpcs</groupId>
@@ -63,10 +62,9 @@
         </dependency>
         <dependency>
             <groupId>com.fastasyncworldedit</groupId>
-            <artifactId>FastAsyncWorldEdit-Core</artifactId>
+            <artifactId>FastAsyncWorldEdit-bukkit</artifactId>
             <version>21.03.26</version>
-            <scope>system</scope>
-            <systemPath>C:/Users/nikas/Desktop/colony-test/lobby/plugins/FastAsyncWorldEdit-bukkit-21.03.26-5ff3a9b-1286-22.3.9.jar</systemPath>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.sk89q.worldguard</groupId>

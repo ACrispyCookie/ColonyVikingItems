@@ -14,7 +14,7 @@ import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import net.colonymc.colonyspigotapi.api.itemstack.SkullItemBuilder;
+import net.colonymc.colonyspigotlib.lib.itemstack.SkullItemBuilder;
 
 public class EnchantsInventory implements InventoryHolder {
 	

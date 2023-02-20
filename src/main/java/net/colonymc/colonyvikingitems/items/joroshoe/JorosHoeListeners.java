@@ -17,7 +17,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerItemDamageEvent;
 import org.bukkit.inventory.ItemStack;
 
-import net.colonymc.colonyspigotapi.api.player.PlayerInventory;
+import net.colonymc.colonyspigotlib.lib.player.PlayerInventory;
 import net.colonymc.colonyvikingitems.items.ItemChecker;
 import net.colonymc.colonyvikingitems.items.ItemType;
 import net.minecraft.server.v1_8_R3.IChatBaseComponent;

@@ -10,7 +10,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 
-import net.colonymc.colonyspigotapi.api.primitive.RomanNumber;
+import net.colonymc.colonyspigotlib.lib.primitive.RomanNumber;
 import net.colonymc.colonyvikingitems.items.EnchantmentBook;
 import net.colonymc.colonyvikingitems.items.ItemChecker;
 import net.colonymc.colonyvikingitems.items.SpecialItem;

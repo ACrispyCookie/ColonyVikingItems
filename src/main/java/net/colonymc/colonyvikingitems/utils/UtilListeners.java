@@ -16,7 +16,7 @@ import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.util.Vector;
 
-import net.colonymc.colonyspigotapi.api.particles.Particle;
+import net.colonymc.colonyspigotlib.lib.particles.Particle;
 import net.colonymc.colonyvikingitems.items.ItemChecker;
 import net.colonymc.colonyvikingitems.items.SpecialItem;
 
